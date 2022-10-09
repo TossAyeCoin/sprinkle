@@ -23,13 +23,13 @@ My recommendation would be to rent a Hetzner cloud server for $8 a month and jus
 # How to Run? 
 1. Install requirements
 
-    '''pip install schedule requests pandas pandas_ta numpy web3 yfinance streamlit'''
+    ```pip install schedule requests pandas pandas_ta numpy web3 yfinance streamlit```
 
 2. Add your details to the config file. 
 3. Run the python script
 * First run will wait 5400 seconds to first buy check (unless Limit price is hit). This is to build pricing dataframe up before running indicators.Run it straight to console first to make sure it's pulling data correctly. Then you can use the following on Linux to run in background.  
 
-'''nohup python3 -u BlockChainPull_5min.py -d15 -w512 & > logme.txt'''
+```nohup python3 -u BlockChainPull_5min.py -d15 -w512 & > logme.txt```
 
 4. If you want to run the dashboard (it's not complete yet.) run the following command.
     streamlit run dashboard.py
