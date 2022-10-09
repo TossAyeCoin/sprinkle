@@ -37,3 +37,10 @@ My recommendation would be to rent a Hetzner cloud server for $8 a month and jus
 # Notable Items
 * The decision to use BUSD instead of BNB is so that you are always using a stable base when calculating price. I would highly recommend using some stable coin to move back and forth.
 * When updating the config file for a manual Buy/Sell. It will not reset the value in the config file (haven't dug into why yet). Make sure you set them back to false after the tx goes through. 
+* You can edit the config file live while the script is running to do whatever you want. halt trading might be your best friend ;) 
+* Sprinkle runs 4 threads:
+1. Main Runner thread (where indicators are calculated and analyzed)
+2. Second Price Thread, gets the price every second and builds out Dataframe for analysis
+3. 1min price thread, calculated OHLC values every 1 min in a dataframe
+4. 5min price thread, calculated OHLC values every 5 min in a dataframe
+* Current strats utilize the 5 Minute thread mainly, but 1 minute can be useful for early trend confirmations. 
