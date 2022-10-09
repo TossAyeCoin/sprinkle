@@ -49,3 +49,4 @@ My recommendation would be to rent a Hetzner cloud server for $8 a month and jus
 3. 1min price thread, calculated OHLC values every 1 min in a dataframe
 4. 5min price thread, calculated OHLC values every 5 min in a dataframe
 * Current strats utilize the 5 Minute thread mainly, but 1 minute can be useful for early trend confirmations. 
+* Before starting to trade check your token route, some have direct routes from BUSD, but a lot will route to BNB first. Checking this will save you a headache. 
