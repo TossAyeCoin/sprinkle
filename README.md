@@ -1,17 +1,21 @@
 # Sprinkle DeFi Limit Trading + Dashboard
 Sprinkle was designed to be run on BSC against Pancakeswap, mainly due to free+reliable RPC calls and cheap gas on BSC. 
+
 Sprinkle can be used for any EVM compatible chain as well, just replace the RPC,ABI,and web3 functions with whatever dex you want to use.
 
 This system is designed to automatically trade based on a defined strategy or just do limit orders, I have found that it works best when you have a solid long term strategy setup.
+
 Sprinkle can trigger on DIY indicators due candle generation during run. If longer term data is needed, yfinance works quite well as a general aggregate of pricing for top 100 instruments. 
 
 # Why Build Sprinkle?
 I wanted to trade limit order outside of CEX and also not pay the fees to execute limit orders on Defi platforms. Running a cheap server was much cheaper than the extra limit order fees.
+
 Also, to learn about python, web3, and finance frameworks. This code probably isn't structured "the best", but it works for what I need.
 If someone is so inclined to restructure it, full send gator.    
 
 # Hardware Requirements    
 You can run this on a potato. It is designed for TA strategy not for MEV. It can be used for sub minute scraping, but I'm not smart enough to make money with that. 
+
 My recommendation would be to rent a Hetzner cloud server for $8 a month and just run it 24/7. 
 
 # Software Requirements
@@ -33,6 +37,7 @@ My recommendation would be to rent a Hetzner cloud server for $8 a month and jus
 
 4. If you want to run the dashboard (it's not complete yet.) run the following command.
     streamlit run dashboard.py
+
 
 # Notable Items
 * The decision to use BUSD instead of BNB is so that you are always using a stable base when calculating price. I would highly recommend using some stable coin to move back and forth.
