@@ -1,0 +1,43 @@
+{
+  "base_config": {
+    "stop_loss_percent": "0.22",
+    "gain_percent": "1.1",
+    "buy_amount": "100",
+    "address": "Wallet_address",
+    "private_key": "Wallet_private_key",
+    "InputToken_address": "Token2Trade_Address",
+    "sell_now": "False",
+    "buy_now": "False",
+    "in_position": "True",
+    "enable_neg_trend_sell": "False",
+    "base_coin": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+    "defer_percent": "1.016",
+    "slippage": "0.999",
+    "halt_trading": "True",
+    "limit_buy": "True",
+    "limit_price": "30.4",
+    "waitTime": "4"
+  },
+  "strat_config": {
+    "supertrend_p1": "25",
+    "atr1": "1",
+    "supertrend_p2": "30",
+    "atr2": "2",
+    "supertrend_p3": "35",
+    "atr3": "3",
+    "macd_fast": "15",
+    "macd_slow": "20",
+    "macd_signal": "10",
+    "srsi_p": "30",
+    "srsi_k": "13",
+    "srsi_d": "13",
+    "adx_length": "14"
+  },
+  "telegram_config": {
+    "token": "telegram:token",
+    "channel_name": "@telegramChannelName"
+  },
+  "yahoo_finance": {
+    "yfticker": "SOL-USD"
+  }
+}
